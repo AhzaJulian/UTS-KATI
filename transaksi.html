@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pemesanan - Deku & Co.</title>
+  <link rel="icon" type="image/png" href="favicon/Deku & Co.png">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <table width="100%" border="1" cellpadding="10" bgcolor="#8B4513">
+    <tr>
+      <td align="center">
+        <font size="6" color="white"><b>Deku & Co.</b></font><br>
+        <font size="3" color="#FFD700">Produk Lokal Berkualitas, Harga Terjangkau!</font>
+      </td>
+    </tr>
+  </table>
+
+  <!-- MARQUEE -->
+  <marquee bgcolor="#FFD700"><b>Transaksi Aman & Terpercaya | Garansi Uang Kembali 7 Hari | Gratis Ongkir Pulau
+      Jawa!</b></marquee>
+
+  <!-- MENU NAVIGASI (RAPI & TANPA GALERI) -->
+  <table width="100%" border="1" cellpadding="8" bgcolor="#A0522D">
+    <tr align="center">
+      <td width="25%"><a href="index.html">
+          <font color="white"><b> Produk</b></font>
+        </a></td>
+      <td width="25%"><a href="transaksi.html">
+          <font color="white"><b> Pesan Sekarang</b></font>
+        </a></td>
+      <td width="25%"><a href="tentang.html">
+          <font color="white"><b> Tentang Kami</b></font>
+        </a></td>
+      <td width="25%"><a href="kontak.html">
+          <font color="white"><b> Kontak Kami</b></font>
+        </a></td>
+    </tr>
+  </table>
+
+  <!-- BREADCRUMB -->
+  <table width="100%" border="0" cellpadding="8">
+    <tr>
+      <td>
+        <a href="index.html">Beranda</a> &gt;
+        <a href="index.html">Produk</a> &gt;
+        <b>Pesan Sekarang</b>
+      </td>
+    </tr>
+  </table>
+
+  <!-- LAYOUT UTAMA -->
+  <table width="100%" border="1" cellpadding="5">
+    <tr valign="top">
+
+      <!-- LEFT SIDEBAR -->
+      <td width="15%" bgcolor="#FFF0E6">
+        <b>
+          <font size="4">Keamanan</font>
+        </b><br>
+        <hr>
+        ✅ SSL Terenkripsi<br><br>
+        ✅ Data Aman<br><br>
+        ✅ Privasi Terjaga<br><br>
+        <hr>
+        <b>
+          <font size="4">Metode Bayar</font>
+        </b><br>
+        <hr>
+        BCA<br><br>
+        Mandiri<br><br>
+        BRI<br><br>
+        BNI<br><br>
+        QRIS<br><br>
+        COD<br><br>
+      </td>
+
+      <!-- CONTENT: FORM TRANSAKSI -->
+      <td width="70%" bgcolor="#FFFAF0">
+        <h2 align="center">Form Pemesanan Sepatu</h2>
+        <hr>
+
+        <form action="#" method="post">
+
+          <!-- DATA DIRI PEMBELI -->
+          <table width="100%" border="1" cellpadding="10">
+            <tr bgcolor="#8B4513">
+              <td colspan="2">
+                <font color="white"><b>Data Diri Pembeli</b></font>
+              </td>
+            </tr>
+            <tr>
+              <td width="30%"><b>Nama Lengkap <font color="red">*</font></b></td>
+              <td><input type="text" name="nama" size="40" placeholder="Masukkan nama lengkap Anda"></td>
+            </tr>
+            <tr>
+              <td><b>Nomor HP / WhatsApp <font color="red">*</font></b></td>
+              <td><input type="tel" name="hp" size="40" placeholder="Contoh: 08123456789"></td>
+            </tr>
+            <tr>
+              <td><b>Email <font color="red">*</font></b></td>
+              <td><input type="email" name="email" size="40" placeholder="Contoh: nama@email.com"></td>
+            </tr>
+            <tr>
+              <td><b>Jenis Kelamin</b></td>
+              <td>
+                <input type="radio" name="jk" value="pria"> Pria &nbsp;&nbsp;
+                <input type="radio" name="jk" value="wanita"> Wanita
+              </td>
+            </tr>
+            <tr>
+              <td><b>Tanggal Lahir</b></td>
+              <td><input type="date" name="tgl_lahir"></td>
+            </tr>
+          </table>
+
+          <br>
+
+          <!-- DETAIL PRODUK YANG DIPESAN -->
+          <table width="100%" border="1" cellpadding="10">
+            <tr bgcolor="#8B4513">
+              <td colspan="2">
+                <font color="white"><b>Detail Produk yang Dipesan</b></font>
+              </td>
+            </tr>
+            <tr>
+              <td width="30%"><b>Nama Produk <font color="red">*</font></b></td>
+              <td>
+                <select name="produk" size="1">
+                  <option value="">-- Pilih Produk --</option>
+                  <option value="p1">Sepatu Kulit Klasik Pria - Rp 285.000</option>
+                  <option value="p2">Sneakers Lokal Kekinian - Rp 195.000</option>
+                  <option value="p3">Sandal Batik Wanita - Rp 85.000</option>
+                  <option value="p4">Boots Formal Kulit Sapi - Rp 420.000</option>
+                  <option value="p5">Sepatu Olahraga Ringan - Rp 165.000</option>
+                  <option value="p6">Flat Shoes Wanita Elegan - Rp 120.000</option>
+                  <option value="p7">Sepatu Anak Motif Karakter - Rp 95.000</option>
+                  <option value="p8">Pantofel Pria Formal - Rp 310.000</option>
+                  <option value="p9">Slip On Anyaman Bambu - Rp 75.000</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><b>Ukuran Sepatu <font color="red">*</font></b></td>
+              <td>
+                <select name="ukuran" size="1">
+                  <option value="">-- Pilih Ukuran --</option>
+                  <option value="36">36</option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><b>Warna</b></td>
+              <td>
+                <input type="checkbox" name="warna" value="coklat"> Cokelat &nbsp;
+                <input type="checkbox" name="warna" value="hitam"> Hitam &nbsp;
+                <input type="checkbox" name="warna" value="putih"> Putih &nbsp;
+                <input type="checkbox" name="warna" value="navy"> Navy
+              </td>
+            </tr>
+            <tr>
+              <td><b>Jumlah <font color="red">*</font></b></td>
+              <td><input type="number" name="jumlah" value="1" min="1" max="99" size="5"> pasang</td>
+            </tr>
+            <tr>
+              <td><b>Catatan Tambahan</b></td>
+              <td><textarea name="catatan" rows="3" cols="40"
+                  placeholder="Contoh: minta dibungkus, request desain khusus, dll..."></textarea></td>
+            </tr>
+          </table>
+
+          <br>
+
+          <!-- ALAMAT PENGIRIMAN -->
+          <table width="100%" border="1" cellpadding="10">
+            <tr bgcolor="#8B4513">
+              <td colspan="2">
+                <font color="white"><b>Alamat Pengiriman</b></font>
+              </td>
+            </tr>
+            <tr>
+              <td width="30%"><b>Alamat Lengkap <font color="red">*</font></b></td>
+              <td><textarea name="alamat" rows="3" cols="40"
+                  placeholder="Jalan, RT/RW, Kelurahan, Kecamatan..."></textarea></td>
+            </tr>
+            <tr>
+              <td><b>Kota / Kabupaten <font color="red">*</font></b></td>
+              <td><input type="text" name="kota" size="30" placeholder="Contoh: Bandung"></td>
+            </tr>
+            <tr>
+              <td><b>Provinsi <font color="red">*</font></b></td>
+              <td>
+                <select name="provinsi" size="1">
+                  <option value="">-- Pilih Provinsi --</option>
+                  <option value="jabar">Jawa Barat</option>
+                  <option value="jateng">Jawa Tengah</option>
+                  <option value="jatim">Jawa Timur</option>
+                  <option value="dki">DKI Jakarta</option>
+                  <option value="diy">DI Yogyakarta</option>
+                  <option value="banten">Banten</option>
+                  <option value="sumut">Sumatera Utara</option>
+                  <option value="lainnya">Provinsi Lainnya</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><b>Kode Pos</b></td>
+              <td><input type="text" name="kodepos" size="10" placeholder="Contoh: 40111"></td>
+            </tr>
+            <tr>
+              <td><b>Jasa Pengiriman <font color="red">*</font></b></td>
+              <td>
+                <input type="radio" name="ekspedisi" value="jne"> JNE &nbsp;
+                <input type="radio" name="ekspedisi" value="jnt"> J&T &nbsp;
+                <input type="radio" name="ekspedisi" value="sicepat"> SiCepat &nbsp;
+                <input type="radio" name="ekspedisi" value="gosend"> GoSend (Same Day) &nbsp;
+                <input type="radio" name="ekspedisi" value="ambil"> Ambil Sendiri
+              </td>
+            </tr>
+          </table>
+
+          <br>
+
+          <!-- METODE PEMBAYARAN -->
+          <table width="100%" border="1" cellpadding="10">
+            <tr bgcolor="#8B4513">
+              <td colspan="2">
+                <font color="white"><b>Metode Pembayaran</b></font>
+              </td>
+            </tr>
+            <tr>
+              <td width="30%"><b>Pilih Pembayaran <font color="red">*</font></b></td>
+              <td>
+                <select name="pembayaran" size="1">
+                  <option value="">-- Pilih Metode Pembayaran --</option>
+                  <option value="transfer_bca">Transfer Bank BCA</option>
+                  <option value="transfer_mandiri">Transfer Bank Mandiri</option>
+                  <option value="transfer_bri">Transfer Bank BRI</option>
+                  <option value="transfer_bni">Transfer Bank BNI</option>
+                  <option value="qris">QRIS (GoPay / OVO / DANA / ShopeePay)</option>
+                  <option value="cod">COD (Bayar di Tempat)</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><b>Punya Kode Voucher?</b></td>
+              <td>
+                <input type="text" name="voucher" size="20" placeholder="Masukkan kode voucher">
+                <button type="button">Gunakan</button>
+              </td>
+            </tr>
+          </table>
+
+          <br>
+
+          <!-- KONFIRMASI -->
+          <table width="100%" border="1" cellpadding="10">
+            <tr bgcolor="#FFF8DC">
+              <td>
+                <input type="checkbox" name="setuju" value="ya">
+                Saya menyetujui <a href="#">Syarat dan Ketentuan</a> serta <a href="#">Kebijakan Privasi</a> Deku & Co.
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <input type="submit" value="✅ KONFIRMASI PESANAN">
+                &nbsp;&nbsp;
+                <input type="reset" value="Reset Form">
+              </td>
+            </tr>
+          </table>
+
+        </form>
+
+      </td>
+
+      <!-- RIGHT SIDEBAR -->
+      <td width="15%" bgcolor="#FFF0E6">
+        <b>
+          <font size="4">Langkah Pesan</font>
+        </b><br>
+        <hr>
+        1. Isi Data Diri<br><br>
+        2. Pilih Produk<br><br>
+        3. Isi Alamat<br><br>
+        4. Pilih Bayar<br><br>
+        5. Konfirmasi<br><br>
+      </td>
+
+    </tr>
+  </table>
+
+  <!-- FOOTER -->
+  <table width="100%" border="1" cellpadding="10" bgcolor="#8B4513">
+    <tr align="center">
+      <td>
+        <font color="white">
+          <b>&copy; 2026 Deku &amp; Co. - Semua Hak Dilindungi.</b><br>
+          <font size="2">Dibuat oleh: Muhammad Ahza Tri Julian | NIM: 10525030 | IS-1</font>
+        </font>
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
